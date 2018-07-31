@@ -119,7 +119,7 @@ h3 {
 .main-section {
     float: left;
     width: 100%;
-    max-width: 960;
+    max-width: 960px;
     padding: 30px;
     margin: 0 0 40px;
     background: #ffffff;
@@ -221,15 +221,11 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
 
     .main-section {
-        float: left;
-        width: 100%;
         max-width: 728px;
-        padding: 30px;
-        margin: 0 0 40px;
-        background: #ffffff;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #dddddd;
+    }
+
+    .container {
+        max-width: 728px;
     }
 
 }
@@ -237,23 +233,42 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
 
     .main-section {
-        float: left;
-        width: 100%;
         max-width: 728px;
-        padding: 30px;
-        margin: 0 0 40px;
-        background: #ffffff;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #dddddd;
+    }
+
+    .container {
+        max-width: 728px;
     }
 
 }
 
 @media screen and (max-width: 640px) {
 
+    .main-section {
+        max-width: 600px;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
     .masthead {
         position: static;
+    }
+
+    .logo {
+        width: 640px;
+        margin-left: -20px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .main-container {
+        padding-top: 0;
     }
   
   }
